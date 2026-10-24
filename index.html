@@ -284,6 +284,7 @@
       .cinfo h3 { font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; font-weight: 600; font-family: "Public Sans", sans-serif; }
       .cinfo a, .cinfo p.val { font-size: 17px; font-weight: 600; text-decoration: none; }
       .cinfo a:hover { color: var(--accent-ink); }
+      .cinfo p.small { font-size: 14px; color: var(--muted); margin-top: 2px; }
       form.contact-form {
         background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
         padding: 30px 28px; box-shadow: var(--shadow); display: grid; gap: 16px;
@@ -364,7 +365,7 @@
               <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2m0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.38-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.58 1.74-1.14.27-.56.27-1.04.19-1.14-.09-.1-.23-.16-.48-.28"/></svg>
               <span data-i18n="hero_cta_wa">Escríbenos por WhatsApp</span>
             </a>
-            <a class="btn btn-ghost" href="#servicios" data-i18n="hero_cta_services">Ver servicios</a>
+            <a class="btn btn-ghost" href="https://calendar.app.google/J17VFajBB3TRfYVR6" target="_blank" rel="noopener"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span data-i18n="hero_cta_book">Agenda tu consulta</span></a>
           </div>
           <div class="hero-trust">
             <ul>
@@ -629,6 +630,14 @@
         <div class="contact-grid">
           <div class="contact-info">
             <div class="cinfo">
+              <div class="svc-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+              <div>
+                <h3 data-i18n="ct_book_h">Agenda tu consulta</h3>
+                <a href="https://calendar.app.google/J17VFajBB3TRfYVR6" target="_blank" rel="noopener" data-i18n="ct_book_link">Reservar cita de 45 minutos</a>
+                <p class="small" data-i18n="ct_book_note">En persona en Port Saint Lucie o por video. Lunes a sábado, 8 a.m. a 8 p.m.</p>
+              </div>
+            </div>
+            <div class="cinfo">
               <div class="svc-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
               <div>
                 <h3 data-i18n="ct_phone_h">Teléfono / WhatsApp</h3>
@@ -736,6 +745,7 @@
           hero_lead: "At Zavarse Parejo Consulting Inc, we help you understand your credit, correct inaccurate information on your reports, and prepare your business to access capital — with education, transparency, and a plan tailored to you.",
           hero_cta_wa: "Message us on WhatsApp",
           hero_cta_services: "See services",
+          hero_cta_book: "Book a consultation",
           trust_1: "Nothing due at signing",
           trust_2: "Written contract",
           trust_3: "3-business-day cancellation",
@@ -841,6 +851,9 @@
           ct_kicker: "Contact",
           ct_h2: "Let's talk about your case",
           ct_intro: "Tell us what you need and we will reply with the next steps. No obligation, and no charge for the first conversation.",
+          ct_book_h: "Book a consultation",
+          ct_book_link: "Book a 45-minute appointment",
+          ct_book_note: "In person in Port Saint Lucie or by video. Monday to Saturday, 8 a.m. to 8 p.m.",
           ct_phone_h: "Phone / WhatsApp",
           ct_email_h: "Email",
           ct_addr_h: "Address",
